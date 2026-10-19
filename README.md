@@ -5,7 +5,21 @@ Custom integration v0.3.0, for BrizLabs RY micro string lights over BLE via Blue
 **Status:** v0.3.0. Automated tests use a fake device (242 tests). Behaviour was verified against real hardware by the author; scene names are provisional (see below). Unofficial, not affiliated with BrizLabs or Tuya.
 
 ## Installation
-Copy `custom_components/brizlabs` into your Home Assistant `config/custom_components/` directory (or add this repository to HACS as a custom repository), restart Home Assistant, then add the **BrizLabs Micro String Lights** integration. Requires a Bluetooth adapter reachable by BlueZ and `bleak`.
+### HACS (custom repository)
+Requires [HACS](https://www.hacs.dev/). This repository is **not** in the HACS default catalog, so add it manually:
+
+[![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=tgmstudios&repository=brizlabs-ha&category=integration)
+
+1. HACS → ⋮ (top right) → **Custom repositories**, or use the badge above.
+2. Repository: `https://github.com/tgmstudios/brizlabs-ha`, Type: **Integration**, then **Add**.
+3. Find **BrizLabs Micro String Lights** in HACS, **Download**, and restart Home Assistant.
+4. Settings → Devices & services → **Add integration** → BrizLabs Micro String Lights.
+Requires a Bluetooth adapter reachable by BlueZ and `bleak`. Declared Home Assistant minimum (`hacs.json`) is 2026.8.2, the only version it was tested on.
+
+### Manual
+Copy `custom_components/brizlabs` into your Home Assistant `config/custom_components/` directory, restart, then add the integration.
+
+HACS installs from the latest GitHub release if one exists, otherwise from the default branch. Packaging checks (HACS validation, hassfest, tests) run in GitHub Actions; the integration has not been installed through HACS on a live Home Assistant by the author.
 
 ## Entities
 - **Light** – on/off, brightness, HS colour, and an *effect* list (scenes + music modes). Choosing a scene effect sends its first captured (app default) palette and speed.
@@ -26,3 +40,6 @@ Scene names come from the app's tile labels, mapped to scene IDs by the **order 
 ## Known limits
 - Names may change in later versions, which would change effect names in automations.
 - Tests use a fake device and synthetic fixtures; run with `pip install pytest pytest-asyncio homeassistant bleak` then `python -m pytest`.
+
+## License
+No license file is included and none has been chosen; visibility of this repository alone does not grant reuse rights.
