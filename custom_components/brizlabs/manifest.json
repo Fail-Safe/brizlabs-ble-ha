@@ -1,12 +1,16 @@
 {
   "domain": "brizlabs",
   "name": "BrizLabs Micro String Lights",
-  "version": "0.3.0",
-  "documentation": "https://github.com/tgmstudios/brizlabs-ha",
-  "issue_tracker": "https://github.com/tgmstudios/brizlabs-ha/issues",
-  "codeowners": ["@tgmstudios"],
-  "integration_type": "device",
+  "codeowners": [
+    "@tgmstudios"
+  ],
   "config_flow": true,
-  "requirements": ["bleak>=0.22.0"],
-  "iot_class": "local_push"
+  "documentation": "https://github.com/tgmstudios/brizlabs-ha",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/tgmstudios/brizlabs-ha/issues",
+  "requirements": [
+    "bleak>=0.22.0"
+  ],
+  "version": "0.3.0"
 }
