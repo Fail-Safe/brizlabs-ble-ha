@@ -14,7 +14,7 @@ Requires [HACS](https://www.hacs.dev/). This repository is **not** in the HACS d
 2. Repository: `https://github.com/tgmstudios/brizlabs-ha`, Type: **Integration**, then **Add**.
 3. Find **BrizLabs Micro String Lights** in HACS, **Download**, and restart Home Assistant.
 4. Settings → Devices & services → **Add integration** → BrizLabs Micro String Lights.
-Requires a Bluetooth adapter reachable by BlueZ and `bleak`. Declared Home Assistant minimum (`hacs.json`) is 2026.8.2, the only version it was tested on.
+Requires a Bluetooth adapter reachable by BlueZ and `bleak`. Declared Home Assistant minimum (`hacs.json`) is 2026.8.2; tested on 2026.8.2 and 2026.11.3 (bleak 3.0.2).
 
 ### Manual
 Copy `custom_components/brizlabs` into your Home Assistant `config/custom_components/` directory, restart, then add the integration.
