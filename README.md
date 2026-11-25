@@ -10,10 +10,10 @@ Custom integration v0.4.0, for BrizLabs RY micro string lights over BLE via Blue
 ### HACS (custom repository)
 Requires [HACS](https://www.hacs.dev/). This repository is **not** in the HACS default catalog, so add it manually:
 
-[![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=tgmstudios&repository=brizlabs-ha&category=integration)
+[![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Fail-Safe&repository=brizlabs-ble-ha&category=integration)
 
 1. HACS → ⋮ (top right) → **Custom repositories**, or use the badge above.
-2. Repository: `https://github.com/tgmstudios/brizlabs-ha`, Type: **Integration**, then **Add**.
+2. Repository: `https://github.com/Fail-Safe/brizlabs-ble-ha`, Type: **Integration**, then **Add**.
 3. Find **BrizLabs Micro String Lights** in HACS, **Download**, and restart Home Assistant.
 4. Settings → Devices & services → **Add integration** → BrizLabs Micro String Lights.
 Requires a Bluetooth adapter reachable by BlueZ and `bleak`. Declared Home Assistant minimum (`hacs.json`) is 2026.8.2; tested on 2026.8.2 and 2026.11.3 (bleak 3.0.2).
