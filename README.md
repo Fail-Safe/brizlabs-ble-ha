@@ -2,6 +2,8 @@
 
 Custom integration v0.4.0, for BrizLabs RY micro string lights over BLE via BlueZ. No cloud.
 
+**Fork notice:** this repository is the maintained fork of [tgmstudios/brizlabs-ha](https://github.com/tgmstudios/brizlabs-ha). v0.4 replaces the scene codec after an HCI capture of the official iOS app showed the real protocol (`scene_select`); the corresponding upstream PR is [tgmstudios/brizlabs-ha#1](https://github.com/tgmstudios/brizlabs-ha/pull/1). Verified on a 500-LED curtain strand. The upstream `dreamlight_scene_mode` codec may be correct for other BrizLabs products; this fork targets hardware that reports `scene_select`.
+
 **Status:** v0.4.0. The scene protocol was captured from the official iOS app over Bluetooth HCI and re-verified on real hardware: every scene, brightness level, colour/white balance, speed, loop sequence, and music mode in this integration maps to a frame the app itself sends. 61 automated tests replay the captured app traffic against a fake device. Unofficial, not affiliated with BrizLabs or Tuya.
 
 ## Installation
